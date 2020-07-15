@@ -13,7 +13,8 @@
     "build:server": "babel src -d lib",
     "build:all": "npm run build:server && npm run build:frontend-for-production",
     "prepublishOnly": "npm run build:all",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "build",
   },
   "bin": {
     "commuter": "lib/bin.js"
