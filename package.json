@@ -14,7 +14,7 @@
     "build:all": "npm run build:server && npm run build:frontend-for-production",
     "prepublishOnly": "npm run build:all",
     "test": "jest",
-    "prepare": "build"
+    "prepare": "npm run build"
   },
   "bin": {
     "commuter": "lib/bin.js"
